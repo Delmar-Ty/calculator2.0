@@ -154,19 +154,19 @@ function trig(func) {
  } else {
     if (func === "sin") {
         trigNum = parseFloat(document.getElementById('main-input').innerHTML);
-        document.getElementById('main-input').innerHTML = Math.sin(trigNum * (Math.PI / 180));
+        document.getElementById('main-input').innerHTML = Math.sin(trigNum);
         document.getElementById('secondary-input').innerHTML = func + "(" + trigNum + ")";
         opCount++;
         display = "";
     } else if (func === "cos") {
         trigNum = parseFloat(document.getElementById('main-input').innerHTML);
-        document.getElementById('main-input').innerHTML = Math.cos(trigNum * (Math.PI / 180));
+        document.getElementById('main-input').innerHTML = Math.cos(trigNum);
         document.getElementById('secondary-input').innerHTML = func + "(" + trigNum + ")";
         opCount++;
         display = "";
     } else if (func === "tan") {
         trigNum = parseFloat(document.getElementById('main-input').innerHTML);
-        document.getElementById('main-input').innerHTML = Math.tan(trigNum * (Math.PI / 180));
+        document.getElementById('main-input').innerHTML = Math.tan(trigNum);
         document.getElementById('secondary-input').innerHTML = func + "(" + trigNum + ")";
         opCount++;
         display = "";
