@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/script.js"></script>
+</head>
+<body>
+    <div id="calc-body">
+        <div id="calc-screen">
+            <p id="secondary-input"></p>
+            <p id="main-input">0</p>
+        </div>
+
+        <div id="calc-grid">
+            <div id="seven" onclick="insert('7')" class="calc-button">7</div>
+            <div id="eight" onclick="insert('8')" class="calc-button">8</div>
+            <div id="nine" onclick="insert('9')" class="calc-button">9</div>
+            <div id="multi" onclick="operator(' * ')" class="calc-button">*</div>
+            <div id="divide" onclick="operator(' / ')" class="calc-button">/</div>
+            <div id="sin" onclick="trig('sin')" class="calc-button">Sin</div>
+            <div id="four" onclick="insert('4')" class="calc-button">4</div>
+            <div id="five" onclick="insert('5')" class="calc-button">5</div>
+            <div id="six" onclick="insert('6')" class="calc-button">6</div>
+            <div id="minus" onclick="operator(' - ')" class="calc-button">-</div>
+            <div id="sqrt" onclick="operator(' ^ ')" class="calc-button">x<sup>y</sup></div>
+            <div id="cos" onclick="trig('cos')" class="calc-button">Cos</div>
+            <div id="one" onclick="insert('1')" class="calc-button">1</div>
+            <div id="two" onclick="insert('2')" class="calc-button">2</div>
+            <div id="three" onclick="insert('3')" class="calc-button">3</div>
+            <div id="plus" onclick="operator(' + ')" class="calc-button">+</div>
+            <div id="exp" onclick="squareRoot()" class="calc-button">&Sqrt;</div>
+            <div id="tan" onclick="trig('tan')" class="calc-button">Tan</div>
+            <div id="sign" onclick="signChange()" class="calc-button">+/-</div>
+            <div id="zero" onclick="insert('0')" class="calc-button">0</div>
+            <div id="period" onclick="insert('.')" class="calc-button">.</div>
+            <div id="equal" onclick="calculate()" class="calc-button">=</div>
+            <div id="clear" onclick="reset()" class="calc-button">C</div>
+            <div id="trig-mode" onclick="mode()" class="calc-button">Rad</div>
+            <div id="delete" onclick="remove()" class="calc-button">Del</div>
+            <div id="pi" onclick="pie()" class="calc-button">&pi;</div>
+        </div>
+    </div>
+</body>
+</html>
