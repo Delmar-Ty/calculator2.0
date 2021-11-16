@@ -1,0 +1,57 @@
+body {
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+#calc-body {
+    width: 75%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 6%;
+}
+
+#calc-screen {
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    position: relative;
+}
+
+#secondary-input #main-input {
+    margin-right: 1%;
+    overflow: hidden;
+}
+
+#secondary-input {
+    font-size: 1.2em;
+    color: gray;
+}
+
+#main-input {
+    font-size: 2em;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+#calc-grid {
+    width: 100%;
+    height: 80%;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
+    margin-top: 1%;
+}
+
+.calc-button {
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.calc-button:hover {
+    background-color: white;
+}
